@@ -1,0 +1,11 @@
+<h1>Tasks</h1>
+
+<p>Parrafo de prueba para ver que onda con git, se ve que no anda la garompa esta</p>
+<p>
+    <h1>Tus tareas son</h1>
+    {% for task in tasks %}
+    <h3>{{task.title}}</h3>
+    <p>{{task.descripcion}}</p>
+    <p>Projects: {{task.project.id}}</p>
+    {% endfor %}
+</p>
