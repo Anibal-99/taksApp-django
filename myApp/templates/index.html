@@ -1,6 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'layouts/base.html' %}
+{% load static %}
 
 {% block content %}
 <h1>{{title}}</h1>
+
+<img src="{% static 'cursoDjango.jpg' %}" alt="" width="500">
+
 <p>Texto de ejemplo para el cursito de django desde cero</p>
 {% endblock  %}
